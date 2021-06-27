@@ -1,0 +1,149 @@
+
+<div class="container">
+  <header class="hearder">
+    <h1 id="title" class"text-center">Burger Survey Form </h1> 
+    <p id="description" class="description text-center">
+  Thank you for the feedback </p>
+</header>
+ <form id="survey-form">
+    <div class="form-group">
+       <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+       </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+        </div>
+   <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your favourite burger?</p>
+       <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select favourite burger</option>
+        <option value="beef">Beef burger</option>
+        <option value="fish">Fish burger</option>
+        <option value="veggie">Veggie burger</option>
+        <option value="chicken">Chicken burger</option>
+        <option value="kangaroo">Kangaroo burger</option>
+      </select>
+    </div>
+    <div class="form-group">
+       <p>Would you recommend our burgers to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />No</label
+      >
+       <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Yes</label
+      >
+            <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+    </div>
+     <div class="form-group">
+       <p>What's your favourite burger topping?</p>
+       <select id="most-like" name="mostLike" class="form-control" required>
+         <option disabled selected value>Select an option</option>
+        <option value="challenges">Pickles</option>
+        <option value="projects">Cheese</option>
+        <option value="community">Bacon</option>
+        <option value="openSource">Pineapple</option>
+      </select>
+    </div>
+   <div class="form-group">
+      <p>
+        How can we make a better burger?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+     <label
+        ><input
+          name="prefer"
+          value="Bigger burgers"
+          type="checkbox"
+          class="input-checkbox"
+        />Bigger burgers</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="More shark"
+          type="checkbox"
+          class="input-checkbox"
+        />More pineapple</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Extra sauce"
+          type="checkbox"
+          class="input-checkbox"
+        />Extra sauce</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Free fries"
+          type="checkbox"
+          class="input-checkbox"
+        />Free fries</label
+      >
+      </label
+   </div>
+       <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+     <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+      
